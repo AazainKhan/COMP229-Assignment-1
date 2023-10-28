@@ -1,3 +1,59 @@
 <%- include ('partials/header')%>
-    <%- include ('partials/navbar')%>
+<%- include ('partials/navbar')%>
+<h1><%= title %></h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-bg-light">
+                <img src="/images/animoji.png" class="card-img-top" alt="My avatar">
+                <div class="card-body">
+                    <h5 class="card-title">Aazain Ullah Khan</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-bg-light">
+                        <p class="fw-semibold">SCHOOL</p>
+                        <p>Centennial College</p>
+                    </li>
+                    <li class="list-group-item text-bg-light">
+                        <p class="fw-semibold">EMAIL</p>
+                        <p>aazainkhan@gmail.com</p>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="https://www.github.com/aazainkhan/" target="_blank" class="social-link"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/aazainkhan/" target="_blank" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card text-bg-light" >
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <%- include ('partials/footer')%>

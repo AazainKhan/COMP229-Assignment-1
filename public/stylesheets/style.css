@@ -21,6 +21,7 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
+  opacity: 0.5;
 }
 
 .navbar-brand {
@@ -55,4 +56,9 @@ footer {
 h1{
   padding: 1em 2em;
   text-transform: uppercase;
+}
+
+.social-link{
+  color: var(--light-gray-70);
+  font-size: 2em;
 }
